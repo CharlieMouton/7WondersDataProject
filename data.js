@@ -29,26 +29,26 @@
 //// }
 
 gameData = {
-  players: ["Charlie"],
-  games: [
+  "players": ["Charlie"],
+  "games": [
     {
-      gameNumber: 0,
-      date: "11/1/1994",
-      location: "Houston, TX",
-      scores: {
-        Charlie: {
-          city: "Babylon",
-          side: "A",
-          military: 1,
-          gold: 1,
-          wonder: 1,
-          civic: 1,
-          commercial: 1,
-          guild: 1,
-          science: 1,
-          total: 7,
-        },
-      },
-    },
+      "gameNumber": 0,
+      "date": "11/1/1994",
+      "location": "Houston, TX",
+      "scores": {
+        "Charlie": {
+          "city": "Babylon",
+          "side": "A",
+          "military": 1,
+          "gold": 1,
+          "wonder": 1,
+          "civic": 1,
+          "commercial": 1,
+          "guild": 1,
+          "science": 1,
+          "total": 7
+        }
+      }
+    }
   ]
 }

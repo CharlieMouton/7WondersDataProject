@@ -1,0 +1,128 @@
+<HTML>
+  <head>
+    <script src="node_modules/lodash/lodash.js"></script>
+    <script src="data.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="jsonify.js"></script>
+  </head>
+
+  <body>
+
+    Game Number <input value="" type="text" id="gameNumber">
+    Location <input value="" type="text" id="location">
+    Date <input value="" type="text" id="date">
+    <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;width: 800px;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+      .tg .tg-gwd2{font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif !important;;vertical-align:top}
+    </style>
+    <table class="tg">
+      <tr>
+        <th class="tg-gwd2">player</th>
+        <th class="tg-gwd2">city</th>
+        <th class="tg-gwd2">side</th>
+        <th class="tg-gwd2">military</th>
+        <th class="tg-gwd2">gold</th>
+        <th class="tg-gwd2">wonder</th>
+        <th class="tg-gwd2">civic</th>
+        <th class="tg-gwd2">commercial</th>
+        <th class="tg-gwd2">guild</th>
+        <th class="tg-gwd2">science</th>
+        <th class="tg-gwd2">total</th>
+      </tr>
+      <tr>
+        <td class="tg-gwd2"><input value="" type="text" id="player1"></td>
+        <td class="tg-gwd2"><input value="" type="text" id="city1"></td>
+        <td class="tg-gwd2"><input value="" type="text" id="side1"></td>
+        <td class="tg-gwd2"><input value="" type="text" id="military1"></td>
+        <td class="tg-gwd2"><input value="" type="text" id="gold1"></td>
+        <td class="tg-gwd2"><input value="" type="text" id="wonder1"></td>
+        <td class="tg-gwd2"><input value="" type="text" id="civic1"></td>
+        <td class="tg-gwd2"><input value="" type="text" id="commercial1"></td>
+        <td class="tg-gwd2"><input value="" type="text" id="guild1"></td>
+        <td class="tg-gwd2"><input value="" type="text" id="science1"></td>
+        <td class="tg-gwd2"><input value="" type="text" id="total1"></td>
+      </tr>
+      <tr>
+        <td class="tg-gwd2"><input type="text" id="player2"></td>
+        <td class="tg-gwd2"><input type="text" id="city2"></td>
+        <td class="tg-gwd2"><input type="text" id="side2"></td>
+        <td class="tg-gwd2"><input type="text" id="military2"></td>
+        <td class="tg-gwd2"><input type="text" id="gold2"></td>
+        <td class="tg-gwd2"><input type="text" id="wonder2"></td>
+        <td class="tg-gwd2"><input type="text" id="civic2"></td>
+        <td class="tg-gwd2"><input type="text" id="commercial2"></td>
+        <td class="tg-gwd2"><input type="text" id="guild2"></td>
+        <td class="tg-gwd2"><input type="text" id="science2"></td>
+        <td class="tg-gwd2"><input type="text" id="total2"></td>
+      </tr>
+      <tr>
+        <td class="tg-gwd2"><input type="text" id="player3"></td>
+        <td class="tg-gwd2"><input type="text" id="city3"></td>
+        <td class="tg-gwd2"><input type="text" id="side3"></td>
+        <td class="tg-gwd2"><input type="text" id="military3"></td>
+        <td class="tg-gwd2"><input type="text" id="gold3"></td>
+        <td class="tg-gwd2"><input type="text" id="wonder3"></td>
+        <td class="tg-gwd2"><input type="text" id="civic3"></td>
+        <td class="tg-gwd2"><input type="text" id="commercial3"></td>
+        <td class="tg-gwd2"><input type="text" id="guild3"></td>
+        <td class="tg-gwd2"><input type="text" id="science3"></td>
+        <td class="tg-gwd2"><input type="text" id="total3"></td>
+      </tr>
+      <tr>
+        <td class="tg-gwd2"><input type="text" id="player4"></td>
+        <td class="tg-gwd2"><input type="text" id="city4"></td>
+        <td class="tg-gwd2"><input type="text" id="side4"></td>
+        <td class="tg-gwd2"><input type="text" id="military4"></td>
+        <td class="tg-gwd2"><input type="text" id="gold4"></td>
+        <td class="tg-gwd2"><input type="text" id="wonder4"></td>
+        <td class="tg-gwd2"><input type="text" id="civic4"></td>
+        <td class="tg-gwd2"><input type="text" id="commercial4"></td>
+        <td class="tg-gwd2"><input type="text" id="guild4"></td>
+        <td class="tg-gwd2"><input type="text" id="science4"></td>
+        <td class="tg-gwd2"><input type="text" id="total4"></td>
+      </tr>
+      <tr>
+        <td class="tg-gwd2"><input type="text" id="player5"></td>
+        <td class="tg-gwd2"><input type="text" id="city5"></td>
+        <td class="tg-gwd2"><input type="text" id="side5"></td>
+        <td class="tg-gwd2"><input type="text" id="military5"></td>
+        <td class="tg-gwd2"><input type="text" id="gold5"></td>
+        <td class="tg-gwd2"><input type="text" id="wonder5"></td>
+        <td class="tg-gwd2"><input type="text" id="civic5"></td>
+        <td class="tg-gwd2"><input type="text" id="commercial5"></td>
+        <td class="tg-gwd2"><input type="text" id="guild5"></td>
+        <td class="tg-gwd2"><input type="text" id="science5"></td>
+        <td class="tg-gwd2"><input type="text" id="total5"></td>
+      </tr>
+      <tr>
+        <td class="tg-gwd2"><input type="text" id="player6"></td>
+        <td class="tg-gwd2"><input type="text" id="city6"></td>
+        <td class="tg-gwd2"><input type="text" id="side6"></td>
+        <td class="tg-gwd2"><input type="text" id="military6"></td>
+        <td class="tg-gwd2"><input type="text" id="gold6"></td>
+        <td class="tg-gwd2"><input type="text" id="wonder6"></td>
+        <td class="tg-gwd2"><input type="text" id="civic6"></td>
+        <td class="tg-gwd2"><input type="text" id="commercial6"></td>
+        <td class="tg-gwd2"><input type="text" id="guild6"></td>
+        <td class="tg-gwd2"><input type="text" id="science6"></td>
+        <td class="tg-gwd2"><input type="text" id="total6"></td>
+      </tr>
+      <tr>
+        <td class="tg-gwd2"><input type="text" id="player7"></td>
+        <td class="tg-gwd2"><input type="text" id="city7"></td>
+        <td class="tg-gwd2"><input type="text" id="side7"></td>
+        <td class="tg-gwd2"><input type="text" id="military7"></td>
+        <td class="tg-gwd2"><input type="text" id="gold7"></td>
+        <td class="tg-gwd2"><input type="text" id="wonder7"></td>
+        <td class="tg-gwd2"><input type="text" id="civic7"></td>
+        <td class="tg-gwd2"><input type="text" id="commercial7"></td>
+        <td class="tg-gwd2"><input type="text" id="guild7"></td>
+        <td class="tg-gwd2"><input type="text" id="science7"></td>
+        <td class="tg-gwd2"><input type="text" id="total7"></td>
+      </tr>
+    </table>
+    <button onclick="jsonify()">Submit</button>
+  </body>
+</HTML>
